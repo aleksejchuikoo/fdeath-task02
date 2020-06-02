@@ -243,7 +243,7 @@ header {
   box-shadow: 0 0 0 0.2rem var(--clr-formShadow);
 }
 
-.form-check-label {
+.form-check-label, .form-check-input {
   cursor: pointer;
 }
 
@@ -439,6 +439,16 @@ input:checked + .switch-slider:before {
 .btn-danger:hover {
   background-color: #c82333;
   border-color: #bd2130;
+}
+
+.btn-clear {
+  background-color: #c62828;
+  border-color: #b71c1c;
+}
+
+.btn-clear:hover {
+  background-color: #c21d1d;
+  border-color: #9e1919;
 }
 
 

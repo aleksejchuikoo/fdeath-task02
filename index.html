@@ -92,23 +92,74 @@
               </label>
             </div>
           </div>
+          <div class="modal-group row">
+            <label class="label-switch">Clear the list</label>
+            <button class="btn btn-clear" id="btn-clear">Clear</button>
+          </div>
           <div class="form-group-btns">
             <button class="btn btn-secondary secondCloseBtn">Close</button>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Add task</h5>
+          <button class="close">&times;</button>
+        </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group row">
+              <label for="inputTitle">Title</label>
+              <div class="form-input">
+                <input type="text" class="form-control" id="inputTitle2" placeholder="Title">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputText">Text</label>
+              <div class="form-input">
+                <input type="text" class="form-control" id="inputText2" placeholder="Text">
+              </div>
+            </div>
+            <div class="form-group row">
+              <legend class="col-form-label">Priority</legend>
+              <div class="form-input">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="radios" id="low" value="Low">
+                  <label class="form-check-label" for="low">Low</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="radios" id="medium" value="Medium">
+                  <label class="form-check-label" for="medium">Medium</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="radios" id="high" value="High">
+                  <label class="form-check-label" for="high">High</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group-btns">
+              <button class="btn btn-secondary secondCloseBtn">Close</button>
+              <button class="btn btn-info" id="edit">Edit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
   </header>
 
   <div class="todo-box">
     <div class="container">
-      <h3 class="todo-box__title">ToDo</h3>
+      <h3 class="todo-box__title" id="todoBoxTitle">ToDo<span id="todo-amount"> (0)</span></h3>
       <ul class="todo-box__list">
         
       </ul>
-      <h3 class="todo-box__title">Completed</h3>
+      <h3 class="todo-box__title" id="completedBoxTitle">Completed<span id="completed-amount"> (0)</span></h3>
       <ul class="completed-box__list">
-        <li class="completed-box__item"></li>
       </ul>
     </div>
   </div>
